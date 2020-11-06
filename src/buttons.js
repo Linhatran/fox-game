@@ -1,5 +1,4 @@
 import { ICONS } from "./constants";
-import { handleUserAction } from "./gameState";
 
 const toggleHighlighted = (iconIndex, isShown) => {
   return document
@@ -7,8 +6,7 @@ const toggleHighlighted = (iconIndex, isShown) => {
     .classList.toggle("highlighted", isShown);
 };
 
-//write a function to loop over buttons
-export default function initButtons() {
+export default function initButtons(handleUserAction) {
   let iconIndex = 0;
   function buttonClick(e) {
     if (e.target.classList.value.includes("right-btn")) {
