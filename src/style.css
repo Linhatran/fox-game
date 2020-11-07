@@ -21,24 +21,24 @@ body {
 }
 
 .frame {
-  height: 762px;
-  width: 762px;
+  height: 47.625rem;
+  width: 47.625rem;
   position: relative;
 }
 .inner {
   position: relative;
 }
 .game {
-  width: 628px;
-  height: 577px;
+  width: 39.25rem;
+  height: 36rem;
   position: absolute;
-  top: 62px;
-  left: 67px;
+  top: 3.875rem;
+  left: 4.18rem;
 }
 .game.night {
-  width: 716px;
-  top: 62px;
-  left: -19px;
+  width: 44.75rem;
+  top: 3.875rem;
+  left: -1.188rem;
 }
 .hidden {
   display: none;
@@ -51,26 +51,26 @@ body {
   position: absolute;
 }
 .buttons {
-  top: 674px;
-  left: 266px;
-  height: 71px;
-  width: 228px;
+  top: 42.125rem;
+  left: 16.625rem;
+  height: 4.44rem;
+  width: 14.25rem;
   justify-content: space-around;
 }
 
 .icons {
   justify-content: space-between;
-  top: 572px;
-  left: 194px;
-  height: 67px;
-  width: 374px;
+  top: 35.75rem;
+  left: 12.125rem;
+  height: 4.188rem;
+  width: 23.25rem;
 }
 
 /*game elements */
 .poop-bag {
   position: absolute;
-  top: 300px;
-  left: 170px;
+  top: 18.75rem;
+  left: 10.625rem;
 }
 .modal-inner {
   position: absolute;
@@ -79,9 +79,9 @@ body {
   right: 0;
   background-color: purple;
   color: white;
-  padding: 25px;
-  font-size: 21px;
-  border-radius: 10px;
+  padding: 1.56rem;
+  font-size: 1.31rem;
+  border-radius: 0.625rem;
   font-weight: 600;
 }
 .modal:empty {
@@ -92,32 +92,32 @@ body {
 }
 .fox {
   position: absolute;
-  top: 336px;
-  left: 285px;
+  top: 21rem;
+  left: 17.81rem;
   overflow: hidden;
 }
 .fox-pooping {
-  top: 319px;
-  left: 159px;
+  top: 19.94rem;
+  left: 9.94rem;
 }
 .fox-celebrate {
-  top: 290px;
-  left: 290px;
+  top: 18.125rem;
+  left: 18.125rem;
 }
 .fox-rain,
 .fox-hungry,
 .fox-eating {
-  top: 362px;
+  top: 22.625rem;
 }
 .fox-egg {
-  left: 248px;
-  top: 288px;
+  left: 15.5rem;
+  top: 18rem;
 }
 .fox-sleep {
-  top: 351px;
-  left: 445px;
+  top: 21.94rem;
+  left: 27.81rem;
 }
 .fox-dead {
-  top: 380px;
-  left: 243px;
+  top: 23.75rem;
+  left: 15.188rem;
 }
