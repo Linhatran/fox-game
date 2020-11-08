@@ -2,7 +2,7 @@ export const TICK_RATE = 2000;
 export const ICONS = ["fish", "poop", "weather"];
 export const RAIN_CHANCE = 0.3;
 export const SCENES = ["day", "rain"];
-export const DAY_LENGTH = 40;
+export const DAY_LENGTH = 30;
 export const NIGHT_LENGTH = 3;
 
 export const getNextHungryTime = (clock) =>

@@ -69,6 +69,8 @@ const gameState = {
     modScene("day");
     writeModal();
     this.wakeTime = this.clock + 3;
+    var h1 = document.querySelector("h1");
+    h1.innerHTML = "0";
   },
   wake() {
     this.current = "IDLING";
@@ -92,6 +94,7 @@ const gameState = {
     this.wakeTime = this.clock + NIGHT_LENGTH;
     modFox("sleep");
     modScene("night");
+    this.increaseDay(this.days);
   },
   startCelebrating() {
     this.current = "CELEBRATING";
@@ -137,7 +140,9 @@ const gameState = {
     this.clearTime();
     modFox("dead");
     modScene("dead");
-    writeModal("Fox has died :( <br/>Click the middle button to restart!");
+    writeModal(
+      "Fox has died :( <br/>Click the middle button or press 'Enter' to restart!"
+    );
   },
   clearTime() {
     this.wakeTime = -1;
@@ -156,6 +161,16 @@ const gameState = {
         modFox("idling");
       }
     }
+  },
+  increaseDay() {
+    let h1 = document.querySelector("h1");
+    let day = parseInt(h1.innerText);
+    day++;
+    h1.innerHTML = day;
+    h1.classList.add("animated");
+    h1.addEventListener("animationend", function () {
+      h1.classList.remove("animated");
+    });
   },
 };
 

@@ -2,6 +2,9 @@
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: 16px;
+}
 body {
   margin: 0;
   padding: 0;
@@ -120,4 +123,53 @@ body {
 .fox-dead {
   top: 23.75rem;
   left: 15.188rem;
+}
+/****** Day counter ********/
+@import url(https://fonts.googleapis.com/css?family=Bangers);
+
+h1,
+h2 {
+  font-family: "Bangers", cursive;
+  color: #edce00;
+  text-shadow: 5px 3px #7d4c15;
+  padding: 0;
+}
+h1 {
+  font-size: 100px;
+  position: absolute;
+  top: -41px;
+  left: 156px;
+}
+h2 {
+  position: relative;
+  font-size: 70px;
+}
+.count-day {
+  position: relative;
+  width: 300px;
+  height: 100px;
+  top: -250px;
+}
+@keyframes sizeUp {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.3);
+  }
+}
+.animated {
+  animation: sizeUp 0.2s alternate ease-in-out;
+}
+#instructions {
+  background-color: #cce6e7;
+  position: absolute;
+  margin-right: 50px;
+  padding: 15px 30px 15px 0;
+  box-shadow: 10px 7px #155c7d;
+  color: #155c7d;
+  border-radius: 10px;
+}
+.no-style-list {
+  list-style: none;
 }
